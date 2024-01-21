@@ -1,5 +1,6 @@
 import 'package:data_soft/core/app_fonts.dart';
 import 'package:flutter/material.dart';
+import 'package:localization/localization.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../core/external_sharing.dart';
 import '../../../core/constants.dart';
@@ -37,8 +38,7 @@ class AboutUs extends StatelessWidget {
                   const SizedBox(
                     height: 5,
                   ),
-                  const Text(
-                      "Data Soft Software & Engineering Solutions was established in 2004. Data Soft is a pioneer in the field of software in Egypt, Africa and the Arab world has been the implementation of projects in Egypt, Saudi Arabia, Jordan, the UAE and other sister countries The company is characterized by professional application and implementation of the systems, which contributes effectively and directly in helping the system to control, control and development of all its resources with the latest management systems and software"),
+                  Text("aboutUs".i18n()),
                   const SizedBox(
                     height: 5,
                   ),

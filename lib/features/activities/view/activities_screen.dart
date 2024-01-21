@@ -1,5 +1,6 @@
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:data_soft/core/app_fonts.dart';
+import 'package:data_soft/core/media_query_values.dart';
 import 'package:data_soft/features/activities/view_model/available_cubit.dart';
 import 'package:data_soft/features/drawer/drawer_sceen.dart';
 import 'package:data_soft/core/constants.dart';
@@ -49,46 +50,48 @@ class ActivitiesScreen extends StatelessWidget {
                                   false,
                           builder: (context) {
                             return Container(
-                                height: 90,
+                                height: context.height * 0.1,
                                 width: double.infinity,
                                 padding: const EdgeInsets.symmetric(
-                                    horizontal: 30, vertical: 20),
+                                    horizontal: 30, vertical: 5),
                                 decoration: const BoxDecoration(
                                     borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(25),
                                         bottomRight: Radius.circular(25)),
                                     color: secondryColor),
-                                child: Row(
-                                  children: [
-                                    Container(
-                                      height: 50,
-                                      width: 1,
-                                      color: Colors.white,
-                                    ),
-                                    const SizedBox(
-                                      width: 5,
-                                    ),
-                                    Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Text(
-                                          "Available: ${cubit.availableBudgetModel?.message?.data[0].value} LE",
-                                          style: const TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white),
-                                        ),
-                                        Text(
-                                          "Expenditure budget: ${cubit.availableBudgetModel?.message?.data[0].expenditure} LE",
-                                          style: const TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white),
-                                        ),
-                                      ],
-                                    )
-                                  ],
+                                child: SingleChildScrollView(
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        height: 50,
+                                        width: 1,
+                                        color: Colors.white,
+                                      ),
+                                      const SizedBox(
+                                        width: 5,
+                                      ),
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Text(
+                                            "Available: ${cubit.availableBudgetModel?.message?.data[0].value} LE",
+                                            style: const TextStyle(
+                                                fontSize: 20,
+                                                color: Colors.white),
+                                          ),
+                                          Text(
+                                            "Expenditure budget: ${cubit.availableBudgetModel?.message?.data[0].expenditure} LE",
+                                            style: const TextStyle(
+                                                fontSize: 20,
+                                                color: Colors.white),
+                                          ),
+                                        ],
+                                      )
+                                    ],
+                                  ),
                                 ));
                           },
                           fallback: (context) => Container(),

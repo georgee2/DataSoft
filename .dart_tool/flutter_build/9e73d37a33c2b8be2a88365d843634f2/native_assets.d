@@ -1,0 +1,1 @@
+ /home/frappe/Documents/george/onco_pharm/DataSoft/.dart_tool/flutter_build/9e73d37a33c2b8be2a88365d843634f2/native_assets.yaml: 

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "982478969462",
+    "project_id": "data-softe0",
+    "storage_bucket": "data-softe0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982478969462:android:c2fbecc496148e896cdd57",
+        "android_client_info": {
+          "package_name": "com.datasoft"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFQomJQCRXef7nkEAPQH6qcELwx-p3KUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

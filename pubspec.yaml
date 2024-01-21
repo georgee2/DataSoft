@@ -1,0 +1,88 @@
+name: data_soft
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0-272.0.dev <4.0.0"
+
+dependencies:
+  bloc: ^8.1.2
+  cached_network_image: ^3.3.0
+  clip_shadowx: ^0.0.1
+  conditional_builder_null_safety: ^0.0.6
+  cupertino_icons: ^1.0.2
+  d_chart: ^2.2.11
+  dio: ^5.1.2
+  dotted_border: ^2.0.0+3
+  fl_chart: ^0.62.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.3
+  flutter_chat_bubble: ^2.0.2
+  flutter_svg: ^1.0.3
+  fluttertoast: ^8.0.9
+  intl: ^0.18.0
+  shared_preferences: ^2.1.1
+  syncfusion_flutter_datepicker: ^21.2.8
+  timelines: ^0.1.0
+  firebase_core: ^2.15.1
+  cloud_firestore: ^4.9.1
+  flutter_launcher_icons: ^0.11.0
+  url_launcher: ^6.1.14
+  firebase_messaging: ^14.6.9
+  geolocator: ^10.1.0
+  network_info_plus: ^4.0.2
+  permission_handler: ^11.0.1
+  file_picker: null
+  vibration: ^1.8.2
+  flutter_map: ^6.0.0
+  latlong2: ^0.9.0
+  flutter_localizations:
+    sdk: flutter
+  localization: ^2.1.1
+  banner_carousel:
+    git:
+      url: https://github.com/JohnNasser2/banner_carousel
+  http: ^1.1.0
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo/logo.jpg"
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/forTesting/
+    - assets/logo/
+    - assets/lang/
+
+fonts:
+  - family: ArialReg
+    fonts:
+      - asset: assets/fonts/Arial/arialReg.ttf
+  - family: ArialLight
+    fonts:
+      - asset: assets/fonts/Arial/arialLight.ttf
+  - family: RobotoBold
+    fonts:
+      - asset: assets/fonts/Roboto/robotoBold.ttf
+  - family: RobotoMed
+    fonts:
+      - asset: assets/fonts/Roboto/robotoMed.ttf
+  - family: RobotoReg
+    fonts:
+      - asset: assets/fonts/Roboto/robotoReg.ttf
+  - family: RobotoLight
+    fonts:
+      - asset: assets/fonts/Roboto/robotoLight.ttf
